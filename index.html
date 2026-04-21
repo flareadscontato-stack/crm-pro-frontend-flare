@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRM Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0a; --bg2: #111; --bg3: #1a1a1a; --bg4: #222;
+      --yellow: #F5C518; --yellow2: #d4a800; --yellow-dim: #1e1800;
+      --green: #00e676; --green-dim: #002a12;
+      --red: #ff4444; --red-dim: #2a0000;
+      --txt: #fff; --txt2: #888; --txt3: #444;
+      --border: #1e1e1e; --border2: #2a2a2a;
+      --font-head: 'Space Grotesk', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+    body { background: var(--bg); color: var(--txt); font-family: var(--font-body); font-size: 14px; }
+    #root { height: 100vh; display: flex; flex-direction: column; }
+    input, select, button { font-family: var(--font-body); }
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--bg2); }
+    ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
